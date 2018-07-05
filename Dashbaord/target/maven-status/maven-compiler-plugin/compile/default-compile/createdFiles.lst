@@ -1,0 +1,12 @@
+promdashboard\model\Category.class
+promdashboard\model\Person.class
+promdashboard\config\WebAppConfiguration.class
+promdashboard\controller\LoginController.class
+promdashboard\dao\PersonDaoImp.class
+promdashboard\service\UserManagementService.class
+promdashboard\dao\PersonDao.class
+promdashboard\config\WebApplicationInitializer.class
+promdashboard\dao\PersonDaoImp$1.class
+promdashboard\controller\DashboardController.class
+promdashboard\service\UserManagementServiceImp.class
+promdashboard\model\Talent.class

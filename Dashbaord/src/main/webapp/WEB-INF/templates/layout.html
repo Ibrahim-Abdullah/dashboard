@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+    <!-- SITE HEAD TAG LAYOUT -->
+    <head th:fragment="site-head">
+        <meta charset="UTF-8"/>
+        <!-- provide the links to all static resources here : links to csss and javascript files-->
+
+        <link rel="stylesheet" href="../../../resources/static/css/bootstrap.min.css" th:href="@{resources/static/css/bootstrap.min.css}"/>
+        <link rel="stylesheet" href="../../../resources/static/css/style.css" th:href="@{resources/static/css/style.css}"/>
+        <script src="../../../resources/static/js/jquery-3.2.1.min.js" th:src="@{resources/static/js/jquery-3.2.1.min.js}"></script>
+    </head>
+    <!-- END OF SITE HEAD TAG LAYOUT -->
+    <body>
+
+        <!-- SITE HEADER LAYOUT -->
+        <header th:fragment="site-header">
+
+            <!-- Top most header -->
+            <div id="header-top" class=row>
+                <div class="header-user" id="header-user">
+                    <div class="col-md-2 col-md-offset-9"><a href="userprofile.html">example@promytheus.net</a></div>
+                </div>
+
+                <div class="header-logout col-md-1">
+                    <a href="login.html">Log out</a>
+                </div>
+            </div>
+        </header>
+        <!-- END OF SITE HEADER LAYOUT -->
+
+
+        <!-- Page specific content will go here -->
+        <p>This is Ibrahim Abdullah</p>
+        
+        
+        <!-- SITE FOOTER LAYOUT -->
+        <footer th:fragment="site-footer">
+            <div class="footer-bottom">
+                <div class="col-md-2 col-md-offset-5 footer-class"><p>PromyTheus &copy;2017</p></div>
+            </div>
+        </footer>
+        <!-- SITE FOOTER LAYOUT -->
+    </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Collapsible sidebar using Bootstrap 3</title>
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <img src="img/logo2.png" alt="Logo">
+                </div>
+                <section>
+                    <form>
+                        <div class="form-group">
+                            <label for="data-category">Filter data</label>
+                            <select name="data-category" class="form-control form-element">
+                                <option>All</option>
+                                <option>Country</option>
+                                <option>Talent</option>
+                                <option>Name</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="search-term">
+                                Search term
+                            </label>
+                            <input type="text" name="search-term" class="form-control form-element">
+                        </div>
+                        <div>
+                            <button class="btn">Search</button>
+                        </div>
+                    </form>
+                </section>
+                <section>
+                    <!--                 <header>
+                        <h3 style="text-align: center" class="form-header">Export Data</h3>
+                    </header> -->
+                    <form class="form2">
+                        <div class="form-group">
+                            <label for="data-category">Select file format</label>
+                            <select name="data-category" class="form-control form-element">
+                                <option>Excel</option>
+                                <option>CSV</option>
+                                <option>PDF</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button class="btn download">Download</button>
+                        </div>
+                    </form>
+                </section>
+            </nav>
+            <!-- Page Content Holder -->
+            <div id="content">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid nav-bar">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Username</a></li>
+                                <li><a href="#">Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <section>
+                    <table class="table table-striped table-hover" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Talent</th>
+                                <th>Talent Score</th>
+                                <th>Promytheus Score</th>
+                                <th>Country</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <a><tr>
+                                <td>Ibrahim</td>
+                                <td>Ibrahim</td>
+                                <td>Ibrahim</td>
+                                <td>Ibrahim</td>
+                                <td>Ibrahim</td>
+                            </tr></a>
+                            <tr>
+                                <td>Ibrahim</td>
+                                <td>Ibrahim</td>
+                                <td>Ibrahim</td>
+                                <td>Ibrahim</td>
+                                <td>Ibrahim</td>
+                            </tr>
+                            <tr>
+                                <td>Ibrahim</td>
+                                <td>Ibrahim</td>
+                                <td>Ibrahim</td>
+                                <td>Ibrahim</td>
+                                <td>Ibrahim</td>
+                            </tr>
+                            <tr>
+                                <td>Ibrahim</td>
+                                <td>Ibrahim</td>
+                                <td>Ibrahim</td>
+                                <td>Ibrahim</td>
+                                <td>Ibrahim</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

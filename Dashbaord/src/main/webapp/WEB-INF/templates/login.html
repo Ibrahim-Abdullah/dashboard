@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th=“http://www.thymeleaf.org”>
+<head>
+<meta charset="UTF-8">
+<title>Log In | Genkey Inventory Management System</title>
+<meta charset="UTF-8" />
+<!-- provide the links to all static resources here : links to csss and javascript files-->
+
+<link rel="stylesheet" href="../../resources/static/css/bootstrap.min.css"
+	th:href="@{resources/static/css/bootstrap.min.css}" />
+<link rel="stylesheet" href="../../resources/static/css/style.css"
+	th:href="@{resources/static/css/style.css}" />
+<script src="../../resources/static/js/jquery-3.2.1.min.js"
+	th:src="@{resources/static/js/jquery-3.2.1.min.js}"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="login-wrap">
+			<img src="../static/img/gklogo.png" th:src="@{resources/static/img/gklogo.png}"
+				class="img-responsive img-rounded">
+			<h3 class="text-center col-sm-offset-1" style="color: white">Inventory
+				Management System</h3>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+			<form role="form" class="form-horizontal" method="post"
+				th:action="@{/login}" th:object="${loginForm}">
+				<div class="form-group">
+					<label for="email" class="col-sm-3 control-label">Email</label>
+
+					<div class="col-sm-7">
+						<input type="email" class="form-control" id="email"
+							placeholder="example@Genkey.com" required th:field="*{email}">
+					</div>
+					<div>
+						<span th:class="${#fields.hasErrors('email')} ? 'formError'"
+							th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>
+					</div>
+					<div>&nbsp;</div>
+				</div>
+				<div class="form-group">
+					<label for="password" class="col-sm-3 control-label">Password</label>
+
+					<div class="col-sm-7">
+						<input type="password" name="password" id="password"
+							class="form-control" required th:field="*{password}">
+					</div>
+					<div>
+						<span th:class="${#fields.hasErrors('password')} ? 'formError'"
+							th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></span>
+					</div>
+					<div>&nbsp;</div>
+				</div>
+				<div>&nbsp;</div>
+				<input type="submit"
+					class="btn btn-primary col-sm-3 col-sm-offset-5" value="Log In">
+			</form>
+		</div>
+	</div>
+</body>
+</html>
